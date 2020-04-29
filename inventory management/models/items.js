@@ -1,17 +1,16 @@
-// db schema
-
+// item schema
 const mongoose = require('mongoose');
 
 const itemSchema = new mongoose.Schema(
     {
     name: {
         type: String,
-        required: false,
+        required: true,
     },
 
     quantity: {
-        type: String,
-        required: false,
+        type: Number,
+        required: true,
     }
 
 }, {
@@ -19,4 +18,4 @@ const itemSchema = new mongoose.Schema(
 });
 
 //export 
-module.exports = mongoose.model('items', itemSchema);
+module.exports = mongoose.model('Items', itemSchema);

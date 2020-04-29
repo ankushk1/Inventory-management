@@ -1,4 +1,4 @@
-//MW
+// Database
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/inventory_management');

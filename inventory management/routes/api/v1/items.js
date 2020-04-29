@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-const api = require('../../../controller/items');
+const itemController = require('../../../controller/items_controller');
 
 
-//crud
-router.get('/', api.index);
-router.post('/create', api.create);
-router.delete('/:id', api.destroy);
-router.post('/:id/update', api.update);
+//routes
+router.get('/', itemController.getAll);
+router.post('/create', itemController.create);
+router.delete('/:id', itemController.delete);
+router.put('/:id/update', itemController.update);
 
 
 module.exports = router;
