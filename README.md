@@ -1,11 +1,12 @@
 # Inventory-management
-Crud operations using restApi for inventory management using Nodejs, Express and MongoDB.
+restApi for inventory management using Nodejs, Express and MongoDB.
 
 install dependencies-npm install
 
 start server-npm start
 
-1. Create item- POST- localhost:8002/api/v1/items/create
+
+1.Create item- POST- localhost:8002/api/v1/items/create
 
 2.Delete item- DELETE- localhost:8002/api/v1/items/:id
 
